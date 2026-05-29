@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyspace International Airport | Premium Aviation Services</title>
+    <meta name="description" content="Experience world-class aviation, premium lounges, and seamless global connectivity at Skyspace International Airport.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aviation: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae6fd',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        },
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-plane-departure text-aviation-700 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-dark uppercase">SKYSPACE <span class="text-aviation-700">INTL</span></span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-aviation-700 font-medium transition-colors">Services</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-aviation-700 font-medium transition-colors">Why Us</a>
+                    <a href="#stats" class="text-gray-600 hover:text-aviation-700 font-medium transition-colors">Stats</a>
+                    <a href="#about" class="text-gray-600 hover:text-aviation-700 font-medium transition-colors">About</a>
+                    <a href="#faq" class="text-gray-600 hover:text-aviation-700 font-medium transition-colors">FAQ</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="#contact" class="bg-aviation-800 text-white px-6 py-2.5 rounded-full font-medium hover:bg-aviation-900 transition-colors shadow-md hover:shadow-lg">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-600 hover:text-dark focus:outline-none" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="md:hidden hidden bg-white border-t border-gray-100 absolute w-full" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-aviation-50 hover:text-aviation-700 rounded-md">Services</a>
+                <a href="#why-us" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-aviation-50 hover:text-aviation-700 rounded-md">Why Us</a>
+                <a href="#stats" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-aviation-50 hover:text-aviation-700 rounded-md">Stats</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-aviation-50 hover:text-aviation-700 rounded-md">About</a>
+                <a href="#faq" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-aviation-50 hover:text-aviation-700 rounded-md">FAQ</a>
+                <a href="#contact" class="block w-full text-center mt-4 bg-aviation-800 text-white px-6 py-3 rounded-md font-medium hover:bg-aviation-900 transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 flex items-center min-h-[90vh] lg:min-h-screen" id="home">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Airport Terminal" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-10">
+            <div class="max-w-3xl fade-in-up">
+                <span class="text-aviation-200 font-semibold tracking-wider uppercase mb-2 block">Welcome to the Future of Travel</span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                    Elevating Your <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-aviation-200 to-white">Global Journey</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl">
+                    Experience world-class aviation, premium lounges, and seamless connectivity at Skyspace International Airport. Your journey begins with excellence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-aviation-600 hover:bg-aviation-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-aviation-500/50 text-center flex items-center justify-center gap-2">
+                        <span>Book Your Journey</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all text-center">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flight Search UI Overlay -->
+            <div class="mt-16 bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-5xl fade-in-up" style="animation-delay: 0.2s;">
+                <h3 class="text-dark font-bold text-xl mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass text-aviation-700"></i> Track Your Flight
+                </h3>
+                <form class="grid grid-cols-1 md:grid-cols-4 gap-4" onsubmit="event.preventDefault(); alert('Flight tracking simulation. In a real app, this connects to live API.');">
+                    <div class="col-span-1 md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-600 mb-1">Flight Number or Destination</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fa-solid fa-plane text-gray-400"></i>
+                            </div>
+                            <input type="text" class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-lg focus:ring-aviation-500 focus:border-aviation-500 transition-colors" placeholder="e.g., SK102 or London">
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <label class="block text-sm font-medium text-gray-600 mb-1">Date</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fa-solid fa-calendar text-gray-400"></i>
+                            </div>
+                            <input type="date" class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-lg focus:ring-aviation-500 focus:border-aviation-500 transition-colors">
+                        </div>
+                    </div>
+                    <div class="col-span-1 flex items-end">
+                        <button type="submit" class="w-full bg-dark text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                            Search Flights
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-gray-50" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-aviation-700 font-semibold tracking-wider uppercase mb-2 block">Premium Experience</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Live Airport Services</h2>
+                <p class="text-gray-600 text-lg">We provide everything you need for a comfortable, stress-free journey from the moment you arrive.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-aviation-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tv text-2xl text-aviation-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Flight Information</h3>
+                    <p class="text-gray-600">Real-time updates on arrivals, departures, delays, and gate changes directly to your device.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-aviation-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-check text-2xl text-aviation-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Check-In Assistance</h3>
+                    <p class="text-gray-600">Self-service kiosks and dedicated staff to make your check-in process swift and seamless.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-aviation-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-suitcase-rolling text-2xl text-aviation-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Baggage Services</h3>
+                    <p class="text-gray-600">Secure baggage handling, tracking, wrapping, and convenient storage facilities.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-aviation-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-crown text-2xl text-aviation-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">VIP Lounge Access</h3>
+                    <p class="text-gray-600">Exclusive lounges offering gourmet dining, spa services, and quiet workstations.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-aviation-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-car text-2xl text-aviation-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Airport Transfers</h3>
+                    <p class="text-gray-600">Chauffeur-driven cars, luxury taxis, and express rail links to the city center.</p>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-aviation-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-square-parking text-2xl text-aviation-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Parking Reservations</h3>
+                    <p class="text-gray-600">Secure short-term and long-term parking with valet options available 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white" id="why-us">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Airport Interior" class="rounded-3xl shadow-2xl object-cover h-[600px] w-full" />
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-aviation-700 font-semibold tracking-wider uppercase mb-2 block">Our Advantages</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Redefining the Airport Experience</h2>
+                    <p class="text-gray-600 text-lg mb-10">We merge cutting-edge technology with unparalleled hospitality to ensure that every moment you spend at Skyspace is extraordinary.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-aviation-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-bolt text-aviation-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Fast Check-In & Security</h4>
+                                <p class="text-gray-600">State-of-the-art biometric scanners and automated lanes reduce waiting times by 60%.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-aviation-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-globe text-aviation-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Global Connectivity</h4>
+                                <p class="text-gray-600">Direct flights to over 150 international destinations across 6 continents.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-aviation-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-martini-glass-citrus text-aviation-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Premium Lounges</h4>
+                                <p class="text-gray-600">Award-winning facilities featuring fine dining, showers, and dedicated relaxation zones.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-aviation-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-headset text-aviation-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">24/7 Support</h4>
+                                <p class="text-gray-600">Our multilingual concierge team is available around the clock to assist you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-20 bg-aviation-950 text-white" id="stats">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-aviation-200 mb-2 stat-counter" data-target="45">0</div>
+                    <div class="text-sm md:text-base text-gray-300 font-medium uppercase tracking-wide">Million Passengers Served</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-aviation-200 mb-2 stat-counter" data-target="85">0</div>
+                    <div class="text-sm md:text-base text-gray-300 font-medium uppercase tracking-wide">Airlines Connected</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-aviation-200 mb-2 stat-counter" data-target="1200">0</div>
+                    <div class="text-sm md:text-base text-gray-300 font-medium uppercase tracking-wide">Daily Flights</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-aviation-200 mb-2 stat-counter" data-target="150">0</div>
+                    <div class="text-sm md:text-base text-gray-300 font-medium uppercase tracking-wide">Global Destinations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 bg-gray-50" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <span class="text-aviation-700 font-semibold tracking-wider uppercase mb-2 block">About Skyspace</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">A Legacy of Aviation Excellence</h2>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Established in 1995, Skyspace International has grown from a regional hub to one of the world's most prestigious aviation centers. We are dedicated to providing a safe, efficient, and luxurious transit environment for millions of global travelers annually.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Sustainability and innovation are at the core of our operations. With our newly built eco-terminal, we are committed to reducing our carbon footprint while expanding our capacity to serve the travelers of tomorrow.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-aviation-700 font-bold hover:text-aviation-800 transition-colors">
+                        Learn more about our vision <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute inset-0 bg-aviation-600 rounded-3xl transform translate-x-4 translate-y-4 opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1570527419145-2f9540b6158e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Airport Terminal Exterior" class="relative rounded-3xl shadow-xl object-cover h-[500px] w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-aviation-700 font-semibold tracking-wider uppercase mb-2 block">Passenger Stories</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">What Travelers Say</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-aviation-200 absolute top-6 left-6 z-0"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic">"The fastest security check I've ever experienced. The premium lounge was a sanctuary of calm before my 12-hour flight."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=random" alt="User" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h5 class="font-bold text-dark">Sarah Jenkins</h5>
+                                <span class="text-sm text-gray-500">Business Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-aviation-200 absolute top-6 left-6 z-0"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic">"Traveling with kids is usually stressful, but the dedicated family lanes and play areas made our transit an absolute breeze."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://ui-avatars.com/api/?name=David+Chen&background=random" alt="User" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h5 class="font-bold text-dark">David Chen</h5>
+                                <span class="text-sm text-gray-500">Family of Four</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-aviation-200 absolute top-6 left-6 z-0"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic">"The architecture is stunning and the clear signage makes navigating this massive airport surprisingly easy. Top class facility."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://ui-avatars.com/api/?name=Elena+Rodriguez&background=random" alt="User" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h5 class="font-bold text-dark">Elena Rodriguez</h5>
+                                <span class="text-sm text-gray-500">Frequent Flyer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gray-50" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-aviation-700 font-semibold tracking-wider uppercase mb-2 block">Information</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm">
+                    <button class="w-full px-6 py-4 text-left font-bold text-dark flex justify-between items-center focus:outline-none faq-toggle">
+                        <span>How early should I arrive before my flight?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 hidden faq-content">
+                        We recommend arriving 2 hours prior to departure for domestic flights and 3 hours for international flights to allow ample time for check-in and security screening.
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm">
+                    <button class="w-full px-6 py-4 text-left font-bold text-dark flex justify-between items-center focus:outline-none faq-toggle">
+                        <span>Is there free Wi-Fi available at the airport?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 hidden faq-content">
+                        Yes, complimentary high-speed Wi-Fi is available throughout all terminals. Simply connect to the "Skyspace_Free_WiFi" network and accept the terms of use.
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm">
+                    <button class="w-full px-6 py-4 text-left font-bold text-dark flex justify-between items-center focus:outline-none faq-toggle">
+                        <span>Where can I find lost luggage or items?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 hidden faq-content">
+                        The Lost and Found office is located in Terminal 1 on the Arrivals level. It operates 24/7. You can also file a claim online through our baggage services portal.
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm">
+                    <button class="w-full px-6 py-4 text-left font-bold text-dark flex justify-between items-center focus:outline-none faq-toggle">
+                        <span>Are there sleeping pods or hotels inside the terminal?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 hidden faq-content">
+                        Yes, we offer hourly sleeping pods in Concourse B. Additionally, the Skyspace Transit Hotel is accessible without leaving the secure zone for passengers with long layovers.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-white" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/3">
+                    <span class="text-aviation-700 font-semibold tracking-wider uppercase mb-2 block">Get in Touch</span>
+                    <h2 class="text-3xl font-bold text-dark mb-6">We're Here to Help</h2>
+                    <p class="text-gray-600 mb-8">Have a question or need assistance with your upcoming journey? Reach out to our dedicated support team.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-aviation-50 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-aviation-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Address</h4>
+                                <p class="text-gray-600">1 Skyspace Boulevard,<br/>Aviation District, Metro City 10001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-aviation-50 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-aviation-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Phone</h4>
+                                <p class="text-gray-600">+1 (800) 555-0199 <br/>(24/7 Support)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-aviation-50 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-aviation-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Email</h4>
+                                <p class="text-gray-600">info@skyspace-intl.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-2/3">
+                    <form class="bg-gray-50 p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-aviation-500 focus:border-aviation-500 transition-colors" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-aviation-500 focus:border-aviation-500 transition-colors" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-aviation-500 focus:border-aviation-500 transition-colors" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
+                            <textarea required rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-aviation-500 focus:border-aviation-500 transition-colors" placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-aviation-800 text-white font-bold py-4 rounded-lg hover:bg-aviation-900 transition-colors shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-plane-departure text-aviation-500 text-2xl"></i>
+                        <span class="font-bold text-xl tracking-tight uppercase">SKYSPACE <span class="text-aviation-500">INTL</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Elevating the global journey through unparalleled service, modern facilities, and dedicated hospitality.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-aviation-600 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-aviation-600 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-aviation-600 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-aviation-600 hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Airport Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Flight Status</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terminal Maps</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ & Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Parking Options</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Corporate</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press & Media</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Opportunities</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to receive travel updates and exclusive offers.</p>
+                    <form class="flex" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" required class="bg-gray-800 text-white px-4 py-2 rounded-l-lg w-full focus:outline-none focus:ring-1 focus:ring-aviation-500 border-none" placeholder="Email address">
+                        <button type="submit" class="bg-aviation-600 px-4 py-2 rounded-r-lg hover:bg-aviation-500 transition-colors">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; 2026 Skyspace International Airport. All rights reserved.</p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
